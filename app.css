@@ -54,5 +54,6 @@ body {
 @keyframes jump{
     100% {
         transform: translateY(-5rem) scale(1.9);
+        background-color: rgb(188,111,251);
     }
 }
