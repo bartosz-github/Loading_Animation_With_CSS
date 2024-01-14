@@ -20,12 +20,36 @@ body {
 .dot {
     height: 20px;
     width: 20px;
-    border-radius: 50%;
+    border-radius: 50%; 
     border: 2px solid rgb(32,36,53);
     background-color: rgb(74,177,250);
     animation: jump 0.8s ease-in-out infinite alternate;
 }
 
+ /*
+@for $i from 1 through 5 {
+    .dot:nth-child(#{$i}) {
+        animation-delay: $i * 0.1s
+    }
+}
+*/
+/* not using SASS, need to write separate animation delay */
+
+.dot:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.dot:nth-child(3) {
+    animation-delay: 0.3s;
+}
+.dot:nth-child(4) {
+    animation-delay: 0.4s;
+}
+.dot:nth-child(5) {
+    animation-delay: 0.5s;
+}
 
 @keyframes jump{
     100% {
